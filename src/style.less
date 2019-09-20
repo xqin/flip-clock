@@ -5,12 +5,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #000;
+  background: #101;
+  overflow: hidden;
 }
 
 .flip-clock {
-  text-align: center;
-  perspective: 300px;
+  perspective: 400px;
   margin: 20px auto;
 
   *,
@@ -18,13 +18,18 @@ body {
   *:after { box-sizing: border-box; }
 }
 
+/* 单张卡片 */
 .flip-clock__piece {
   display: inline-block;
-  margin: 0 20px;
+  margin: 0px 6px;
 }
 
+/* 卡片上方的小字 */
 .flip-clock__slot {
-  font-size: 2vw;
+  margin-left: 1.2vw;
+  font-size: 1.2vw;
+  color: #DDD;
+  font-family: sans-serif;
 }
 
 @halfHeight: 0.72em;
@@ -32,10 +37,12 @@ body {
 
 .card {
   display: block;
+  margin-top: 0.9vw;
   position: relative;
   padding-bottom: @halfHeight;
-  font-size: 10vw;
-  line-height: 1;
+  font-size: 11vw;
+  font-family: sans-serif;
+  line-height: 1.08;
 }
 
 .card__top,
@@ -44,13 +51,12 @@ body {
 .card__back::after {
   display: block;
   height: @halfHeight;
-  color: #ccc;
+  color: #D4D4D4;
   background: #222;
-  padding: 0.24em 0.2em;
+  padding: 0.2em 0.23em;
   border-radius: @borderRadius @borderRadius 0 0;
-  backface-visiblity: hidden;
   transform-style: preserve-3d;
-  width: 1.5em;
+  width: 1.52em;
   transform: translateZ(0);
 }
 
