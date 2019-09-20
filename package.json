@@ -1,0 +1,20 @@
+{
+  "name": "flip-clock-countdown",
+  "version": "1.0.0",
+  "description": "_A Pen created at CodePen.io. Original URL: [https://codepen.io/xqin/pen/XWryKoX](https://codepen.io/xqin/pen/XWryKoX).",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp",
+    "serve": "gulp serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-less": "^4.0.1",
+    "less": "^3.10.3"
+  }
+}
